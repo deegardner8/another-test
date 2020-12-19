@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: lightcyan;
+}
+
+.active {
+  background-color: white;
+  color: #3a1a07;
+}

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/nav-bar.css" />
+    <link rel="stylesheet" href="./css/header-image.css" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/footer.scss" />
+    <link rel="stylesheet" href="./css/table.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neucha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=B612:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="header-image">
+        <img src="./images/homebackground-large.png" alt="beach background" />
+        <img src="./images/homebackground-medium.png" alt="beach background" />
+        <img src="./images/homebackground-small.png" alt="beach background" />
+        <div class="centered">HOME</div>
+      </section>
+      <logo>
+        <a href="./index.html"
+          ><img src="./images/scooterlogo.png" alt="scooter's logo"
+        /></a>
+      </logo>
+
+      <nav>
+        <img src="./images/wood12-large.png" alt="wood stick" />
+        <!-- <img src="./images/wood12-medium.png" alt="wood stick"> -->
+        <section class="stage">
+          <div id="home" class="div">
+            <a href="./index.html"><p id="home" class="p active">HOME</p></a>
+          </div>
+          <div class="div" id="rentals">
+            <a href="./rentals.html"><p class="p">RENTALS</p></a>
+          </div>
+          <div class="div" id="reservations">
+            <a href="./reservations.html"><p class="p">RESERVATIONS</p></a>
+          </div>
+          <div class="div" id="tours">
+            <a href="./tours.html"><p class="p">TOURS</p></a>
+          </div>
+          <div class="div" id="contact">
+            <a href="./contact.html"><p class="p">CONTACT</p></a>
+          </div>
+        </section>
+        <div class="burger">
+          <div class="line line1"></div>
+          <div class="line line2"></div>
+          <div class="line line3"></div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <call class="container2">
+        <a href="./reservations.html"><img src="./images/callT.png" alt="Reserve your scooter" /></a>
+      </call>
+      <rental>
+        <h1>Rental Summary</h1>
+        <table>
+          <thead>
+            <tr>
+              <th rowspan="1" colspan="2" class="hide"></th>
+              <th rowspan="1" colspan="2" class="hide">Reservation</th>
+              <th rowspan="1" colspan="2">Walk-In</th>
+            </tr>
+            <tr>
+              <th rowspan="2">Rental Type</th>
+              <th rowspan="2">Max. Persons</th>
+              <th rowspan="1" colspan="1">
+                Half Day <br />
+                (3hrs)
+              </th>
+              <th rowspan="1" colspan="1">Full Day</th>
+              <th rowspan="1" colspan="1">
+                Half Day <br />
+                (3hrs)
+              </th>
+              <th rowspan="1" colspan="1">Full Day</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Honda Metro Scooter</td>
+              <td>1</td>
+              <td>$20</td>
+              <td>$30</td>
+              <td>$25</td>
+              <td>$35</td>
+            </tr>
+            <tr>
+              <td>Honda Dio Scooter</td>
+              <td>2</td>
+              <td>$30</td>
+              <td>$40</td>
+              <td>$35</td>
+              <td>$45</td>
+            </tr>
+            <tr>
+              <td>Honda PCX150 Scooter</td>
+              <td>2</td>
+              <td>$40</td>
+              <td>$50</td>
+              <td>$45</td>
+              <td>$55</td>
+            </tr>
+            <tr>
+              <td>Honda Pioneer ATV</td>
+              <td>4</td>
+              <td>$50</td>
+              <td>$70</td>
+              <td>$60</td>
+              <td>$80</td>
+            </tr>
+            <tr>
+              <td>Jeep Wrangler - 4 door with a/c</td>
+              <td>5</td>
+              <td>$70</td>
+              <td>$100</td>
+              <td>$85</td>
+              <td>$125</td>
+            </tr>
+            <tr>
+              <td>Jeep Wrangler - 2 door</td>
+              <td>4</td>
+              <td>$60</td>
+              <td>$85</td>
+              <td>$70</td>
+              <td>$90</td>
+            </tr>
+          </tbody>
+        </table>
+      </rental>
+      <section class="we-co">
+        <weather>
+          <div class="fiveday">
+            <h2>COZUMEL <BR> FIVE DAY FORECAST</h2>
+            <div class="content lc">
+              <p>
+                <span id="dayofweek1"></span>
+                <span id="forecast1"></span>&deg; F
+              </p>
+              <p>
+                <span id="dayofweek2"></span>
+                <span id="forecast2"></span>&deg; F
+              </p>
+              <p>
+                <span id="dayofweek3"></span>
+                <span id="forecast3"></span>&deg; F
+              </p>
+              <p>
+                <span id="dayofweek4"></span>
+                <span id="forecast4"></span>&deg; F
+              </p>
+              <p>
+                <span id="dayofweek5"></span>
+                <span id="forecast5"></span>&deg; F
+              </p>
+            </div>
+          </div>
+        </weather>
+        <contact>
+          <p>Send Us a Message!</p>
+          <form method="GET" action="thanks.html">
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+              required
+            />
+            <input
+              name="email"
+              type="text"
+              class="feedback-input"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="text"
+              class="feedback-input"
+              placeholder="Comment"
+              required
+            ></textarea>
+            <input type="submit" value="SUBMIT" />
+          </form>
+        </contact>
+      </section>
+    </main>
+    <footer>
+      <div class="footer">
+        <!--Content before waves-->
+        <div class="inner-header grid">
+          <div class="down">
+            <div class="icon">
+              <a href="https://www.facebook.com/"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+            </div>
+            <div class="icon">
+              <a href="https://www.pinterest.com.mx/"
+                ><i class="fab fa-pinterest"></i
+              ></a>
+            </div>
+          </div>
+          <a href="./index.html"
+            ><img src="./images/scooterlogoblack.png" alt="scoots"
+          /></a>
+          <div class="down">
+            <div class="icon">
+              <a href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+            </div>
+            <div class="icon">
+              <a href="https://web.whatsapp.com/"
+                ><i class="fab fa-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!--Waves Container-->
+        <div>
+          <svg
+            class="waves"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28"
+            preserveAspectRatio="none"
+            shape-rendering="auto"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+              />
+            </defs>
+            <g class="parallax">
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="0"
+                fill="rgba(255,255,255,0.7"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="3"
+                fill="rgba(255,255,255,0.5)"
+              />
+              <use
+                xlink:href="#gentle-wave"
+                x="48"
+                y="5"
+                fill="rgba(255,255,255,0.3)"
+              />
+              <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+          </svg>
+        </div>
+        <!--Waves end-->
+      </div>
+      <div class="content flex">
+        <p>CINDY | 2020 | BYUI</p>
+      </div>
+    </footer>
+    <script src="js/weather.js"></script>
+    <script src="js/ham-menu.js"></script>
+  </body>
+</html>

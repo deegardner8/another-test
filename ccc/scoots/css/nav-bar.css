@@ -1,0 +1,215 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px; /*temporal*/
+}
+
+nav {
+  margin-left: 70%;
+  margin-top: -410px;
+  display: flex;
+  justify-content: center;
+}
+
+nav img {
+  position: absolute;
+}
+
+.stage {
+  height: 350px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stage :nth-child(3) {
+  width: 260px;
+}
+
+.p {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+  cursor: pointer;
+  width: 100%;
+  background: #3a1a07;
+  color: white;
+  border-radius: 10px;
+  font-family: "Neucha", cursive;
+  letter-spacing: 5px;
+}
+.div {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  margin-top: 4%;
+  transition-duration: 0.2s;
+}
+.p:hover {
+  background: white;
+  color: black;
+}
+.div:nth-child(odd) {
+  transform: perspective(300px) rotateY(45deg);
+  box-shadow: -2px 2px 7px gray;
+}
+.div:nth-child(even) {
+  transform: perspective(300px) rotateY(-45deg);
+  box-shadow: 2px 2px 7px gray;
+}
+.div:hover {
+  transform: rotateY(0);
+  background: white;
+  color: black;
+  box-shadow: 0px 0px 0px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav image img {
+  height: 450px;
+}
+/* 
+  @media only screen and (max-width: 40em) { 
+
+  } 
+  
+  @media only screen and (min-width: 600px) and (max-width: 800px) { 
+    .stage {
+      margin: 100px 0 -80px -20px;
+    }
+  } 
+  @media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  
+  }  */
+
+@media only screen and (max-width: 600px) {
+  .stage p {
+    font-size: 22px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 800px) {
+  .stage {
+    margin: 100px 0 -80px -20px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .stage {
+    margin-top: 50px;
+  }
+}
+
+/* NUEVOS */
+
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+.burger {
+  display: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+.line {
+  height: 2px;
+  width: 35px;
+  margin: 0.5rem 0;
+  background: black;
+  transition: transform 0.75s ease, opacity 0.75s ease;
+}
+
+@media screen and (max-width: 800px) {
+  .stage {
+    width: 60%;
+  }
+}
+
+nav.show .line1 {
+  transform: translate(-10px) rotate(45deg) translate(15px);
+}
+nav.show .line2 {
+  opacity: 0;
+}
+nav.show .line3 {
+  transform: translate(-10px) rotate(-45deg) translate(15px);
+}
+nav.show .stage {
+  transform: translateX(0%);
+}
+
+@media screen and (max-width: 800px) {
+  .stage {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 800px) {
+  nav img {
+    display: none;
+  }
+
+  nav {
+    margin: 0;
+    color: black;
+    position: absolute;
+    top: 70px;
+    right: 0;
+  }
+
+  nav.show .stage {
+    transform: translateX(-20%);
+  }
+
+  #reservations {
+    width: 170px;
+  }
+
+  .burger {
+    display: block;
+  }
+  .stage {
+    padding: 80px 0;
+    position: fixed;
+    top: 8vh;
+    right: 0;
+    height: 80vh;
+    width: 150px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+  }
+
+  .stage div {
+    transform: none;
+    /* margin-right: 0; */
+    width: 170px;
+  }
+
+  .stage p {
+    background: transparent;
+    text-align: end;
+  }
+
+  .div:nth-child(odd) {
+    transform: none;
+    box-shadow: none;
+  }
+  .div:nth-child(even) {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .p {
+    color: black;
+  }
+}

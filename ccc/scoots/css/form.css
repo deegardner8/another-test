@@ -1,0 +1,79 @@
+.form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    padding: 4em 10%;
+}
+
+
+  h2.heading{
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 300;
+      text-align: left;
+      color: #506982;
+      border-bottom: 1px solid #506982;
+      padding-bottom: 3px;
+      margin: 30px 10px 20px 10px;
+  }
+ 
+  /* OLD STYLES */
+  
+form fieldset {
+  margin: -19px 10px 40px 10px;
+  border: none;
+  font-family: 'Lato';
+}
+
+
+form legend {
+  color: #262626;
+  margin: 0 1rem;
+  padding: 0 .5rem;
+}
+
+form label.top, form div {
+  display: block;
+  padding-top: 1rem;
+  color: #262626;
+  font-size: 1rem;
+}
+
+form label.top input, form label.top select {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #333333;
+  border-radius: 3px;
+  padding: .75rem;
+  width: 90%;
+  max-width: 20rem;
+  background-color: white;
+  font-family: 'Lato';
+}
+
+form label.sbs {
+  display: block;
+  padding: .75rem 0;
+}
+
+form input.submitBtn {
+  border: none;
+  border-radius: .5rem;
+  background-color: white;
+  padding: .75rem 1.5rem;
+  margin: 0 0 2rem 2%;
+  width: 96%;
+  height: 60px;
+  font-size: 150%;
+  max-width: 20rem;
+  border: 2px solid black;
+}
+
+.submitBtn:hover {
+  border-radius: .5rem;
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+}

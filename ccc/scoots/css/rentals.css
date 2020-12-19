@@ -1,0 +1,11 @@
+.rental {
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    color: #333333;
+    background-color: white;
+    padding: 30px;
+    border-radius: 29px;
+    margin: 10px;
+}

@@ -1,0 +1,109 @@
+header {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+}
+
+.header-image {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: ivory;
+}
+
+.centered {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Neucha", cursive;
+  text-shadow: 4px 2px 4px #000000;
+}
+
+.header-image img {
+  width: 100%;
+}
+
+logo img {
+  height: 120px !important;
+  position: absolute;
+  top: 130px;
+  right: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: -1px 3px 29px -3px rgba(56,56,56,0.19); 
+  box-shadow: -1px 3px 29px -3px rgba(56,56,56,0.19);
+}
+
+@media only screen and (max-width: 40.063em) {
+  logo img {
+    height: 200px;
+    position: absolute;
+    top: 250px;
+    right: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  logo img {
+    height: 150px;
+    top: 80px;
+    height: 90px !important;
+  }
+
+  .header-image :nth-child(1) {
+    display: none;
+  }
+
+  .header-image :nth-child(2) {
+    display: none;
+  }
+
+  nav img :nth-child(1) {
+    display: none;
+  }
+
+  nav img :nth-child(2) {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 640px) {
+  .centered {
+    top: 30%;
+  }
+}
+@media only screen and (min-width: 800px) and (max-width: 1020px) {
+  .centered {
+    top: 50%;
+  }
+}
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) {
+  .header-image :nth-child(1) {
+    display: none;
+  }
+
+  .header-image :nth-child(3) {
+    display: none;
+  }
+
+  nav img :nth-child(1) {
+    display: none;
+  }
+}
+@media only screen and (min-width: 64.063em) and (max-width: 90em) {
+  .header-image :nth-child(3) {
+    display: none;
+  }
+
+  .header-image :nth-child(2) {
+    display: none;
+  }
+
+  nav img :nth-child(2) {
+    display: none;
+  }
+}
